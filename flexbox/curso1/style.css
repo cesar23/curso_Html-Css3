@@ -1,0 +1,20 @@
+body {
+    font-size: 2em;
+    font-family: sans-serif;
+    color: #666;
+}
+section{
+    display: flex;
+    /*que se muestre  como Columna*/
+    /*flex-direction: column;*/
+
+    /*que se muestre  como filas*/
+    flex-direction: row;
+    justify-content: space-around;
+}
+article {
+    background-color: #9ef;
+    margin: 5px;
+    padding: 3px;
+    flex-grow: 1; /* permita ocupar todo el espacio disponible en el eje principal*/
+}

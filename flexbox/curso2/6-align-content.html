@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-size: 1.5em;
+            font-family: sans-serif;
+            color: #ddd;
+        }
+
+
+
+        .flex-container {
+            background-color: #666666;
+            height: 450px;
+
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: wrap;
+
+
+            align-items: flex-start;
+            /*align-items: flex-end;*/
+            /*align-items: center;*/
+            /*align-items: stretch;*/
+            /*align-items: baseline;*/
+
+
+
+
+            /*
+            flex-start: indica que las filas se colocarán todas pegadas entre sí (obviamente no aparecerán exactamente pegadas si le hemos colocado un margin), desde el inicio del eje secundario.
+            flex-end: las filas se colocarán pegadas entre sí, pero esta vez pegadas al final del eje secundario.
+            center: se posicionarán en el centro del eje secundario, pegadas entre sí.
+            stretch: Sus dimensiones crecerán para ocupar todo el espacio disponible (a no ser que se haya colocado una dimensión diferente en los elementos).
+            space-between: indica que las filas se separarán entre sí, dejando un espacio proporcional entre ellas.
+            space-around: indica que las filas se separarán, dejando un espacio entre ellas proporcional, también con el borde
+             */
+        }
+
+        .item {
+            background-color: #339948;
+            margin: 5px;
+            padding: 5px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="item" style="width: 20%">1</div>
+    <div class="item" style="width: 8%">2</div>
+    <div class="item" style="width: 30%">3</div>
+    <div class="item" style="width: 15%">4</div>
+    <div class="item" style="width: 18%">5</div>
+    <div class="item" style="width: 23%">6</div>
+    <div class="item" style="width: 6%">7</div>
+    <div class="item" style="width: 34%">8</div>
+    <div class="item" style="width: 18%">9</div>
+</div>
+</body>
+</html>
